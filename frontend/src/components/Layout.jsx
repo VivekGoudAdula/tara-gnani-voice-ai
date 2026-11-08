@@ -138,9 +138,9 @@ export default function Layout() {
       <div className="pt-3 border-t border-hairline/60 t-caption text-muted flex items-center justify-between shrink-0 mt-2">
         <span className="inline-flex items-center gap-1.5">
           <img src="/gnani-logo.png" alt="Gnani AI" className="h-4 w-auto object-contain" />
-          <span className="font-medium text-ink">Gnani AI Challenge</span>
+          <span className="font-medium text-ink">Gnani Voice AI</span>
         </span>
-        <span className="t-caption text-muted-soft">v2.0</span>
+        <span className="t-caption text-muted-soft">Challenge</span>
       </div>
     </div>
   );

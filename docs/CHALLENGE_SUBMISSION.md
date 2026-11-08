@@ -2,7 +2,7 @@
 
 ## Project Identification
 
-- **Project Title:** TARA 2.0 (Targeted Acquisition & Reach Agent)
+- **Project Title:** TARA (Targeted Acquisition & Reach Agent)
 - **Candidate Name:** Vivek Goud Adula
 - **Submission Track:** Gnani AI Internship Challenge — Voice AI Platform
 - **Repository:** [https://github.com/VivekGoudAdula/tara-gnani-voice-ai](https://github.com/VivekGoudAdula/tara-gnani-voice-ai)
@@ -18,13 +18,13 @@ Across India's rapidly expanding digital economy, enterprise customer acquisitio
 2. **High Call Center Costs & Burnout:** Human BPO operations suffer from high employee turnover, inconsistent script adherence, and high costs per qualified lead.
 3. **Disconnected Customer Intelligence:** Traditional dialers blindly blast call lists without understanding customer propensity, previous engagement context, or regulatory compliance (such as TRAI calling hours and DND preferences).
 
-**TARA 2.0** solves this by uniting **Gnani's proprietary Indian voice AI technologies** with an intelligent, compliance-aware customer acquisition and campaign management platform.
+**TARA** solves this by uniting **Gnani's proprietary Indian voice AI technologies** with an intelligent, compliance-aware customer acquisition and campaign management platform.
 
 ---
 
-## 2. Why Gnani AI is Central to TARA 2.0
+## 2. Why Gnani AI is Central to TARA
 
-Rather than relying on generic US-centric speech engines that struggle with Indian dialects, phonetics, and mixed vernacular phrasing ("Hinglish", "Tenglish"), TARA 2.0 places Gnani at the center of its audio pipeline:
+Rather than relying on generic US-centric speech engines that struggle with Indian dialects, phonetics, and mixed vernacular phrasing ("Hinglish", "Tenglish"), TARA places Gnani at the center of its audio pipeline:
 
 - **Gnani Prisma STT (Speech-to-Text):**
   - Accurately captures regional nuances, conversational colloquialisms, and noisy telephony audio (8kHz PSTN).
@@ -35,7 +35,7 @@ Rather than relying on generic US-centric speech engines that struggle with Indi
 
 ---
 
-## 3. Key Technical Innovations in TARA 2.0
+## 3. Key Technical Innovations in TARA
 
 ### 1. Bi-directional WebSocket Telephony Gateway
 TARA connects directly to Twilio Media Streams via an asynchronous FastAPI WebSocket gateway. Incoming 8kHz &mu;-law audio frames from telephone networks are transcoded in real time to 16kHz linear PCM for Gnani Prisma STT, while synthesized audio from Gnani Timbre TTS is converted back to &mu;-law for telephone playback in under 10 milliseconds.

@@ -1,6 +1,6 @@
-# TARA 2.0 — Project Structure & Codebase Map
+# TARA — Project Structure & Codebase Map
 
-This document provides a comprehensive map of the **TARA 2.0 (Targeted Acquisition & Reach Agent)** codebase.
+This document provides a comprehensive map of the **TARA (Targeted Acquisition & Reach Agent)** codebase.
 
 ---
 

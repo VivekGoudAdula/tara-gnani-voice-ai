@@ -1,8 +1,8 @@
-# TARA 2.0 — System Architecture & Voice Pipeline Specification
+# TARA — System Architecture & Voice Pipeline Specification
 
 ## 1. Executive Summary
 
-**TARA 2.0 (Targeted Acquisition & Reach Agent)** is an enterprise-grade multilingual Voice AI customer acquisition and engagement SaaS platform designed for the **Gnani AI Internship Challenge**. TARA orchestrates end-to-end outbound and inbound conversational campaigns, executing low-latency, natural dialogues in Indian regional languages (Telugu, Hindi, and Indian English).
+**TARA (Targeted Acquisition & Reach Agent)** is an enterprise-grade multilingual Voice AI customer acquisition and engagement SaaS platform designed for the **Gnani AI Internship Challenge**. TARA orchestrates end-to-end outbound and inbound conversational campaigns, executing low-latency, natural dialogues in Indian regional languages (Telugu, Hindi, and Indian English).
 
 The system pairs telecommunication-grade WebSockets with **Gnani Prisma Speech-to-Text (STT)** and **Gnani Timbre Text-to-Speech (TTS)**, managed by an intelligent conversational state machine powered by Groq LLMs.
 
@@ -127,7 +127,7 @@ sequenceDiagram
 
 ## 4. Latency Budget & Performance
 
-In conversational Voice AI, conversational fluidness requires an overall **Turn Latency under 1.2 seconds**. TARA 2.0 optimizes each leg of the pipeline:
+In conversational Voice AI, conversational fluidness requires an overall **Turn Latency under 1.2 seconds**. TARA optimizes each leg of the pipeline:
 
 | Pipeline Stage | Target Latency | P95 Latency | Optimization Mechanism |
 | :--- | :--- | :--- | :--- |

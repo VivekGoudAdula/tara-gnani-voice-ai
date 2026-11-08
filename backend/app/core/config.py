@@ -21,12 +21,12 @@ class Settings(BaseSettings):
     seed_test_phone_2: str | None = None
     seed_test_phone_3: str | None = None
 
-    # Twilio Telephony Configuration (TARA 2.0)
+    # Twilio Telephony Configuration (TARA)
     twilio_account_sid: str = ""
     twilio_auth_token: str = ""
     twilio_from_number: str = ""
 
-    # Gnani Voice AI Configuration (TARA 2.0)
+    # Gnani Voice AI Configuration (TARA)
     gnani_api_key: str = ""
     gnani_prisma_url: str = "wss://api.vachana.ai/stt/v3/stream"
     gnani_prisma_model: str = "prisma-v3.0"

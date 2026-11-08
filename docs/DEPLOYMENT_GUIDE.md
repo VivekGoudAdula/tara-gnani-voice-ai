@@ -1,6 +1,6 @@
-# TARA 2.0 — Production Deployment & Configuration Guide
+# TARA — Production Deployment & Configuration Guide
 
-This guide describes how to deploy, configure, and operate the **TARA 2.0 (Targeted Acquisition & Reach Agent)** platform in local development, staging, and enterprise cloud production environments.
+This guide describes how to deploy, configure, and operate the **TARA (Targeted Acquisition & Reach Agent)** platform in local development, staging, and enterprise cloud production environments.
 
 ---
 
@@ -34,9 +34,9 @@ Create a `.env` file inside the `backend/` directory based on `backend/.env.exam
 
 ```ini
 # ==============================================================================
-# TARA 2.0 — Application & Server Settings
+# TARA — Application & Server Settings
 # ==============================================================================
-APP_NAME="TARA 2.0"
+APP_NAME="TARA"
 APP_ENV="production"
 DEBUG=false
 PORT=8000
@@ -163,7 +163,7 @@ Copy the Forwarding URL (e.g., `https://abc1234.ngrok-free.app`). Update `BASE_U
 #### 1. Backend Systemd Service (`/etc/systemd/system/tara-backend.service`):
 ```ini
 [Unit]
-Description=TARA 2.0 FastAPI Application
+Description=TARA FastAPI Application
 After=network.target
 
 [Service]
@@ -248,7 +248,7 @@ After deployment, run the following health checks:
 1. **Verify Backend Health:**
    ```bash
    curl -s https://tara.yourdomain.com/health | jq
-   # Expected output: {"status": "ok", "app": "TARA 2.0", "database": "connected"}
+   # Expected output: {"status": "ok", "app": "TARA", "database": "connected"}
    ```
 
 2. **Verify Provider Health:**

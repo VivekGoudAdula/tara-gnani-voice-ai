@@ -1,12 +1,12 @@
-# TARA 2.0 — Quality Assurance & Testing Guide
+# TARA — Quality Assurance & Testing Guide
 
-This guide details the testing methodology, automated test suites, and manual verification procedures for **TARA 2.0 (Targeted Acquisition & Reach Agent)**.
+This guide details the testing methodology, automated test suites, and manual verification procedures for **TARA (Targeted Acquisition & Reach Agent)**.
 
 ---
 
 ## 1. Test Suite Summary
 
-TARA 2.0 includes a comprehensive automated test suite consisting of **131 tests across 21 test suites**, achieving **100% pass rate**.
+TARA includes a comprehensive automated test suite consisting of **131 tests across 21 test suites**, achieving **100% pass rate**.
 
 | Test Module | Test File | Test Count | Key Functionality Verified |
 | :--- | :--- | :--- | :--- |

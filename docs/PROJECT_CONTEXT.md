@@ -1,15 +1,15 @@
-# PROJECT CONTEXT: TARA 2.0
+# PROJECT CONTEXT: TARA
 
 ## 0. Development & Submission Context
 - **Target Submission:** Gnani AI Internship Challenge.
-- **Project Name:** TARA 2.0 (Targeted Acquisition & Reach Agent).
+- **Project Name:** TARA (Targeted Acquisition & Reach Agent).
 - **Core Directive:** Deliver a stable, fully functional, properly branded, deployed and demonstrable Gnani-powered Voice AI platform.
 - **Speech Technologies:** Gnani Prisma (STT) + Gnani Timbre (TTS).
 - **Telephony & Transport:** Twilio Voice + Twilio Media Streams (8kHz $\mu$-law bi-directional WebSocket streaming).
 - **Conversation Intelligence:** Groq LLM (sub-250ms streaming conversational reasoning).
 
 ## 1. What We Are Building
-TARA 2.0 = Targeted Acquisition & Reach Agent. An enterprise multilingual Voice AI customer acquisition and engagement SaaS platform designed for Indian banks and financial institutions.
+TARA = Targeted Acquisition & Reach Agent. An enterprise multilingual Voice AI customer acquisition and engagement SaaS platform designed for Indian banks and financial institutions.
 It scores customers and leads for financial product fit (propensity intelligence), manages targeted voice campaigns, configures persona and policy parameters, conducts human-like conversations across Indian languages (Telugu, Hindi, Indian English), and updates CRM customer profiles and campaign outcomes in real time.
 
 ## 2. Technology Architecture
