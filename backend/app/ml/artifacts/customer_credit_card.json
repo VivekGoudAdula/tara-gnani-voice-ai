@@ -1,0 +1,180 @@
+{
+  "model_id": "propensity_customer_credit_card",
+  "version": "1.0.0-f178337f",
+  "category": "credit_card",
+  "entity_type": "customer",
+  "features": [
+    {
+      "name": "log_income",
+      "type": "numeric",
+      "mean": 11.11083,
+      "scale": 0.57103,
+      "coef": 0.27919
+    },
+    {
+      "name": "existing_emi_to_income",
+      "type": "numeric",
+      "mean": 0.26373,
+      "scale": 0.14878,
+      "coef": -0.32244
+    },
+    {
+      "name": "is_salaried",
+      "type": "binary",
+      "mean": 0.7215,
+      "scale": 0.44826,
+      "coef": -0.04603
+    },
+    {
+      "name": "is_self_employed",
+      "type": "binary",
+      "mean": 0.19725,
+      "scale": 0.39792,
+      "coef": -0.04693
+    },
+    {
+      "name": "financial_health",
+      "type": "numeric",
+      "mean": 72.60825,
+      "scale": 13.18237,
+      "coef": 0.08915
+    },
+    {
+      "name": "repayment_score",
+      "type": "binary",
+      "mean": 1.72825,
+      "scale": 0.53935,
+      "coef": 0.47071
+    },
+    {
+      "name": "existing_product_count",
+      "type": "binary",
+      "mean": 2.01125,
+      "scale": 0.81001,
+      "coef": 0.21568
+    },
+    {
+      "name": "tenure_months",
+      "type": "binary",
+      "mean": 63.06675,
+      "scale": 33.37094,
+      "coef": 0.06358
+    }
+  ],
+  "intercept": 1.57897,
+  "calibration": {
+    "a": 0.9614,
+    "b": 0.05278
+  },
+  "metrics": {
+    "auc": 0.6952,
+    "brier_score": 0.1452,
+    "base_rate": 0.809,
+    "holdout_samples": 1000,
+    "calibration_table": [
+      {
+        "bin": "0.0-0.1",
+        "count": 0,
+        "mean_predicted": 0.05,
+        "fraction_positive": 0.0
+      },
+      {
+        "bin": "0.1-0.2",
+        "count": 0,
+        "mean_predicted": 0.15,
+        "fraction_positive": 0.0
+      },
+      {
+        "bin": "0.2-0.3",
+        "count": 0,
+        "mean_predicted": 0.25,
+        "fraction_positive": 0.0
+      },
+      {
+        "bin": "0.3-0.4",
+        "count": 5,
+        "mean_predicted": 0.3825,
+        "fraction_positive": 0.4
+      },
+      {
+        "bin": "0.4-0.5",
+        "count": 17,
+        "mean_predicted": 0.4699,
+        "fraction_positive": 0.5882
+      },
+      {
+        "bin": "0.5-0.6",
+        "count": 36,
+        "mean_predicted": 0.5496,
+        "fraction_positive": 0.6944
+      },
+      {
+        "bin": "0.6-0.7",
+        "count": 74,
+        "mean_predicted": 0.6541,
+        "fraction_positive": 0.6351
+      },
+      {
+        "bin": "0.7-0.8",
+        "count": 216,
+        "mean_predicted": 0.7582,
+        "fraction_positive": 0.7454
+      },
+      {
+        "bin": "0.8-0.9",
+        "count": 493,
+        "mean_predicted": 0.854,
+        "fraction_positive": 0.8296
+      },
+      {
+        "bin": "0.9-1.0",
+        "count": 159,
+        "mean_predicted": 0.9191,
+        "fraction_positive": 0.9748
+      }
+    ],
+    "disclaimer": "Synthetic data. Metrics demonstrate the pipeline, not real-world performance."
+  },
+  "trained_at": "2026-10-26T10:15:08.494240+00:00",
+  "training_data": "synthetic",
+  "ground_truth_description": "Documented logistic ground truth with Gaussian noise based on income, debt burden, and repayment.",
+  "excluded_features": [
+    {
+      "name": "language",
+      "reason": "Proxy for protected characteristics; fairness exclusion"
+    },
+    {
+      "name": "city",
+      "reason": "Geographic proxy for demographics; fairness exclusion"
+    },
+    {
+      "name": "age",
+      "reason": "Restricted exclusively to deterministic policy rules, never ML score"
+    },
+    {
+      "name": "gender",
+      "reason": "Protected characteristic; fairness exclusion"
+    },
+    {
+      "name": "name",
+      "reason": "Personally Identifiable Information"
+    },
+    {
+      "name": "phone",
+      "reason": "Contact identifier; non-predictive"
+    },
+    {
+      "name": "consent",
+      "reason": "Regulatory compliance gate flag, enforced at dispatch only"
+    },
+    {
+      "name": "dnd",
+      "reason": "Regulatory compliance gate flag, enforced at dispatch only"
+    }
+  ],
+  "limitations": [
+    "Trained on synthetic audience distribution for demonstration pipeline validation.",
+    "Must be retrained on tenant bank's historical product conversion data before production usage.",
+    "Ranks outreach propensity only; eligibility is strictly enforced by separate deterministic policy rules."
+  ]
+}

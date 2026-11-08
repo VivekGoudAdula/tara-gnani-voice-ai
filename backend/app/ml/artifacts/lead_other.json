@@ -1,0 +1,166 @@
+{
+  "model_id": "propensity_lead_other",
+  "version": "1.0.0-3b381ef1",
+  "category": "other",
+  "entity_type": "lead",
+  "features": [
+    {
+      "name": "log_income",
+      "type": "numeric",
+      "mean": 10.92889,
+      "scale": 0.62724,
+      "coef": 0.3759
+    },
+    {
+      "name": "existing_emi_to_income",
+      "type": "numeric",
+      "mean": 0.28867,
+      "scale": 0.15807,
+      "coef": -0.36951
+    },
+    {
+      "name": "is_salaried",
+      "type": "binary",
+      "mean": 0.6925,
+      "scale": 0.46146,
+      "coef": 0.14178
+    },
+    {
+      "name": "is_self_employed",
+      "type": "binary",
+      "mean": 0.227,
+      "scale": 0.41889,
+      "coef": -0.00308
+    },
+    {
+      "name": "is_partner_referral",
+      "type": "binary",
+      "mean": 0.303,
+      "scale": 0.45956,
+      "coef": 0.1834
+    },
+    {
+      "name": "is_web_form",
+      "type": "binary",
+      "mean": 0.34525,
+      "scale": 0.47545,
+      "coef": 0.18312
+    }
+  ],
+  "intercept": -0.32502,
+  "calibration": {
+    "a": 1.18617,
+    "b": 0.02313
+  },
+  "metrics": {
+    "auc": 0.682,
+    "brier_score": 0.221,
+    "base_rate": 0.425,
+    "holdout_samples": 1000,
+    "calibration_table": [
+      {
+        "bin": "0.0-0.1",
+        "count": 5,
+        "mean_predicted": 0.087,
+        "fraction_positive": 0.0
+      },
+      {
+        "bin": "0.1-0.2",
+        "count": 70,
+        "mean_predicted": 0.1622,
+        "fraction_positive": 0.1429
+      },
+      {
+        "bin": "0.2-0.3",
+        "count": 161,
+        "mean_predicted": 0.2569,
+        "fraction_positive": 0.2112
+      },
+      {
+        "bin": "0.3-0.4",
+        "count": 211,
+        "mean_predicted": 0.3562,
+        "fraction_positive": 0.3934
+      },
+      {
+        "bin": "0.4-0.5",
+        "count": 239,
+        "mean_predicted": 0.448,
+        "fraction_positive": 0.431
+      },
+      {
+        "bin": "0.5-0.6",
+        "count": 165,
+        "mean_predicted": 0.546,
+        "fraction_positive": 0.6061
+      },
+      {
+        "bin": "0.6-0.7",
+        "count": 107,
+        "mean_predicted": 0.6422,
+        "fraction_positive": 0.6449
+      },
+      {
+        "bin": "0.7-0.8",
+        "count": 40,
+        "mean_predicted": 0.728,
+        "fraction_positive": 0.625
+      },
+      {
+        "bin": "0.8-0.9",
+        "count": 2,
+        "mean_predicted": 0.8312,
+        "fraction_positive": 0.5
+      },
+      {
+        "bin": "0.9-1.0",
+        "count": 0,
+        "mean_predicted": 0.95,
+        "fraction_positive": 0.0
+      }
+    ],
+    "disclaimer": "Synthetic data. Metrics demonstrate the pipeline, not real-world performance."
+  },
+  "trained_at": "2026-10-26T10:15:08.557572+00:00",
+  "training_data": "synthetic",
+  "ground_truth_description": "Documented logistic ground truth with Gaussian noise based on income, debt burden, and repayment.",
+  "excluded_features": [
+    {
+      "name": "language",
+      "reason": "Proxy for protected characteristics; fairness exclusion"
+    },
+    {
+      "name": "city",
+      "reason": "Geographic proxy for demographics; fairness exclusion"
+    },
+    {
+      "name": "age",
+      "reason": "Restricted exclusively to deterministic policy rules, never ML score"
+    },
+    {
+      "name": "gender",
+      "reason": "Protected characteristic; fairness exclusion"
+    },
+    {
+      "name": "name",
+      "reason": "Personally Identifiable Information"
+    },
+    {
+      "name": "phone",
+      "reason": "Contact identifier; non-predictive"
+    },
+    {
+      "name": "consent",
+      "reason": "Regulatory compliance gate flag, enforced at dispatch only"
+    },
+    {
+      "name": "dnd",
+      "reason": "Regulatory compliance gate flag, enforced at dispatch only"
+    }
+  ],
+  "limitations": [
+    "Trained on synthetic audience distribution for demonstration pipeline validation.",
+    "Must be retrained on tenant bank's historical product conversion data before production usage.",
+    "Ranks outreach propensity only; eligibility is strictly enforced by separate deterministic policy rules."
+  ]
+}

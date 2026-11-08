@@ -1,0 +1,324 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Editorial Light Design Tokens */
+  --color-primary: #292524;
+  --color-primary-active: #0c0a09;
+  --color-canvas: #f5f5f5;
+  --color-canvas-soft: #fafafa;
+  --color-canvas-deep: #0c0a09;
+  --color-surface-card: #ffffff;
+  --color-surface-strong: #f0efed;
+  --color-surface-dark: #0c0a09;
+  --color-surface-dark-elevated: #1c1917;
+  --color-hairline: #e7e5e4;
+  --color-hairline-soft: #f0efed;
+  --color-hairline-strong: #d6d3d1;
+  --color-ink: #0c0a09;
+  --color-body: #4e4e4e;
+  --color-body-strong: #292524;
+  --color-muted: #777169;
+  --color-muted-soft: #a8a29e;
+  --color-on-primary: #ffffff;
+  --color-on-dark: #ffffff;
+  --color-on-dark-soft: #a8a29e;
+
+  /* Atmospheric Gradient Stops */
+  --color-gradient-mint: #a7e5d3;
+  --color-gradient-peach: #f4c5a8;
+  --color-gradient-lavender: #c8b8e0;
+  --color-gradient-sky: #a8c8e8;
+  --color-gradient-rose: #e8b8c4;
+
+  /* Semantic */
+  --color-semantic-success: #16a34a;
+  --color-semantic-error: #dc2626;
+}
+
+html {
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after,
+html,
+body,
+button,
+input,
+select,
+textarea,
+optgroup {
+  font-family: 'Poppins', 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+html,
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: 'Poppins', 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+}
+
+@layer components {
+  /* .t-display-mega Poppins, 64px/1.05, -1.92px */
+  .t-display-mega {
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.05;
+    letter-spacing: -0.96px;
+  }
+  @media (min-width: 768px) {
+    .t-display-mega {
+      font-size: 52px;
+      line-height: 1.05;
+      letter-spacing: -1.44px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .t-display-mega {
+      font-size: 68px;
+      line-height: 1.05;
+      letter-spacing: -1.92px;
+    }
+  }
+
+  /* .t-display-xl Poppins, 48px/1.08 */
+  .t-display-xl {
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.08;
+    letter-spacing: -0.96px;
+  }
+
+  /* .t-display-lg Poppins, 36px/1.17 */
+  .t-display-lg {
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: -0.36px;
+  }
+
+  /* .t-display-md Poppins, 32px/1.13 */
+  .t-display-md {
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.13;
+    letter-spacing: -0.32px;
+  }
+
+  /* .t-display-sm Poppins 700, 28px/1.2 (app page titles like Leads Registry, Customers Registry, Product Catalogue) */
+  .t-display-sm {
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: -0.24px;
+  }
+
+  /* .t-title-md Poppins 600, 22px/1.35 */
+  .t-title-md {
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  /* .t-title-sm Poppins 600, 20px/1.44 */
+  .t-title-sm {
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.44;
+  }
+
+  /* .t-body-md Poppins 400, 18px/1.5 */
+  .t-body-md {
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  /* .t-body-strong Poppins 600, 18px/1.5 */
+  .t-body-strong {
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  /* .t-body-sm Poppins 400, 14px/1.47 */
+  .t-body-sm {
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.47;
+  }
+
+  /* .t-table Poppins 500, 13px/1.4 */
+  .t-table {
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.4;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* .t-table-head Poppins 600 12px clean uppercase/title case */
+  .t-table-head {
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+  }
+
+  /* .t-caption Poppins 400, 12px/1.5 */
+  .t-caption {
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  /* .t-label Poppins 600, 12px/1.4 */
+  .t-label {
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+  }
+
+  /* .t-eyebrow Poppins 600, 11px uppercase */
+  .t-eyebrow {
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  /* .t-button Poppins 600, 14px/1 */
+  .t-button {
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  /* .t-nav Poppins 500, 13px/1.4 */
+  .t-nav {
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  /* Shared Input Style: 40px height, 8px radius, 1px hairline-strong, 2px ink border on focus */
+  .input-base {
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--color-hairline-strong);
+    background-color: var(--color-surface-card);
+    color: var(--color-ink);
+    padding-left: 14px;
+    padding-right: 14px;
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+    font-size: 14px;
+    line-height: 1.47;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    outline: none;
+    width: 100%;
+  }
+  .input-base:focus {
+    border-color: var(--color-ink);
+    box-shadow: 0 0 0 1px var(--color-ink);
+  }
+  .input-base::placeholder {
+    color: var(--color-muted-soft);
+  }
+
+  /* Static Pastel Orbs (Radial gradients, blurred, zero animation) */
+  .orb-mint {
+    background: radial-gradient(circle, rgba(167, 229, 211, 0.75) 0%, rgba(167, 229, 211, 0.2) 50%, rgba(167, 229, 211, 0) 70%);
+  }
+  .orb-lavender {
+    background: radial-gradient(circle, rgba(200, 184, 224, 0.75) 0%, rgba(200, 184, 224, 0.2) 50%, rgba(200, 184, 224, 0) 70%);
+  }
+  .orb-peach {
+    background: radial-gradient(circle, rgba(244, 197, 168, 0.75) 0%, rgba(244, 197, 168, 0.2) 50%, rgba(244, 197, 168, 0) 70%);
+  }
+  .orb-sky {
+    background: radial-gradient(circle, rgba(168, 200, 232, 0.75) 0%, rgba(168, 200, 232, 0.2) 50%, rgba(168, 200, 232, 0) 70%);
+  }
+  .orb-rose {
+    background: radial-gradient(circle, rgba(232, 184, 196, 0.75) 0%, rgba(232, 184, 196, 0.2) 50%, rgba(232, 184, 196, 0) 70%);
+  }
+
+  /* Guaranteed Surface and Canvas Backgrounds */
+  .bg-surface-card {
+    background-color: var(--color-surface-card) !important;
+  }
+  .bg-surface-strong {
+    background-color: var(--color-surface-strong) !important;
+  }
+  .bg-canvas {
+    background-color: var(--color-canvas) !important;
+  }
+  .bg-canvas-soft {
+    background-color: var(--color-canvas-soft) !important;
+  }
+
+  /* Shared Button Classes: Ink pill primary and hairline outline */
+  .btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  }
+  .btn-primary:hover {
+    background-color: var(--color-primary-active);
+  }
+  .btn-primary:active {
+    background-color: var(--color-canvas-deep);
+  }
+
+  .btn-outline {
+    border: 1px solid var(--color-hairline-strong);
+    color: var(--color-ink);
+  }
+  .btn-outline:hover {
+    background-color: var(--color-surface-strong);
+  }
+  .btn-outline:active {
+    background-color: var(--color-hairline);
+  }
+}
+
+/* Subtle editorial scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-canvas);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-hairline-strong);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted-soft);
+}
