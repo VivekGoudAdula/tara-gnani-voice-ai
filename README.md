@@ -160,7 +160,53 @@ flowchart TD
 
 ---
 
-## 6. Technology Stack
+## 6. Visual Platform Tour & Application Screenshots
+
+TARA 2.0 provides an enterprise SaaS experience engineered for financial institutions and retail banks. Below are high-resolution captures of the active platform:
+
+### 6.1 Executive Command Center & Voice Telemetry
+Real-time dashboard displaying active campaign velocity, high-propensity audience metrics, answer and interest rates, and live **Gnani Prisma & Gnani Timbre infrastructure health**:
+![Executive Command Center](docs/screenshots/02-dashboard.png)
+
+---
+
+### 6.2 5-Step Campaign Creation & Gnani Voice Configuration
+Intuitive multi-step campaign wizard featuring dynamic audience segmentation, snapshot immutability, and native Gnani multilingual voice selection (Telugu, Hindi, Indian English):
+<p align="center">
+  <img src="docs/screenshots/07-campaign-audience.png" alt="Campaign Audience Targeting" width="49%" />
+  <img src="docs/screenshots/08-voice-config.png" alt="Gnani Voice and Language Selection" width="49%" />
+</p>
+
+---
+
+### 6.3 Real-Time Conversations & Post-Call Outcomes
+Slide-out conversation drawer displaying verbatim bilingual transcripts, customer sentiment, interest extraction, and automatic CRM qualification:
+<p align="center">
+  <img src="docs/screenshots/10-call-transcript.png" alt="Live Conversation Transcript" width="49%" />
+  <img src="docs/screenshots/09-campaign-detail.png" alt="Campaign Lifecycle and Recipient Progress" width="49%" />
+</p>
+
+---
+
+### 6.4 Customer Intelligence & Conversion Analytics
+Propensity score distribution, product matching, and comprehensive conversion analytics:
+<p align="center">
+  <img src="docs/screenshots/05-product-matches.png" alt="Lead Propensity Matching Engine" width="49%" />
+  <img src="docs/screenshots/11-outcomes.png" alt="Conversion Funnel and Analytics" width="49%" />
+</p>
+
+---
+
+### 6.5 Enterprise Governance & Data Ingestion
+TRAI calling hour enforcement (09:00–21:00 IST), DND scrubbing, tenant isolation, and audited customer data import:
+<p align="center">
+  <img src="docs/screenshots/03-data-import.png" alt="Customer Data Ingestion" width="49%" />
+  <img src="docs/screenshots/12-governance.png" alt="Governance and Provider Configuration" width="49%" />
+</p>
+
+---
+
+## 7. Technology Stack
 
 | Layer | Component | Technologies & Frameworks |
 |:---|:---|:---|
@@ -175,7 +221,7 @@ flowchart TD
 
 ---
 
-## 7. Gnani Prisma & Gnani Timbre Integration
+## 8. Gnani Prisma & Gnani Timbre Integration
 
 ### 7.1 Gnani Prisma (Speech-to-Text)
 - **Protocol:** Real-time bi-directional WebSocket streaming.
@@ -190,7 +236,7 @@ flowchart TD
 
 ---
 
-## 8. Repository Structure
+## 9. Repository Structure
 
 ```
 APP/
@@ -376,7 +422,7 @@ tests/test_voice_response.py ......                                      [100%]
 
 ---
 
-## 12. Security, Compliance & Regulatory Safeguards
+## 13. Security, Compliance & Regulatory Safeguards
 
 1. **Zero Secret Leakage:** Authentication keys, database connection strings, and telephony tokens are strictly stored in server-side environment variables and are never transmitted in frontend JSON payloads.
 2. **Dedicated Test Database:** Automated tests execute strictly on `tara_test`, ensuring zero modification of operational data.
@@ -386,7 +432,7 @@ tests/test_voice_response.py ......                                      [100%]
 
 ---
 
-## 13. Demonstrated Capabilities vs. Production Prerequisites
+## 14. Demonstrated Capabilities vs. Production Prerequisites
 
 To ensure technical transparency for the Gnani evaluation committee:
 
@@ -406,7 +452,7 @@ To ensure technical transparency for the Gnani evaluation committee:
 
 ---
 
-## 14. License & Disclaimer
+## 15. License & Disclaimer
 
 This project was engineered specifically for the **Gnani AI Internship Challenge**.
 
