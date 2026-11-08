@@ -19,6 +19,7 @@ import {
   ShieldCheck,
   MessageSquare,
   Settings,
+  History,
 } from "lucide-react";
 import { useAuth } from "../auth/AuthContext";
 import { formatRole } from "../utils/format";
@@ -43,33 +44,38 @@ export default function Layout() {
       items: [{ name: "Dashboard", path: "/app/dashboard", icon: LayoutDashboard }],
     },
     {
-      title: "ENGAGEMENT",
+      title: "DATA & AUDIENCE",
       items: [
+        { name: "Data Import", path: "/app/data-import", icon: UploadCloud },
+        { name: "Customers", path: "/app/customers", icon: UserCheck },
+        { name: "Leads", path: "/app/leads", icon: Users },
+      ],
+    },
+    {
+      title: "TARGETING & CAMPAIGNS",
+      items: [
+        { name: "Product Catalogue", path: "/app/products", icon: Package },
+        { name: "Lead Scoring", path: "/app/matches", icon: Sparkles },
         { name: "Campaigns", path: "/app/campaigns", icon: Megaphone },
+      ],
+    },
+    {
+      title: "VOICE OPERATIONS",
+      items: [
         { name: "Live Calls", path: "/app/live-calls", icon: Radio },
         { name: "Conversations", path: "/app/conversations", icon: MessageSquare },
       ],
     },
     {
-      title: "CUSTOMERS & LEADS",
-      items: [
-        { name: "Customers", path: "/app/customers", icon: UserCheck },
-        { name: "Leads", path: "/app/leads", icon: Users },
-        { name: "Lead Intelligence", path: "/app/matches", icon: Sparkles },
-      ],
-    },
-    {
-      title: "INSIGHTS",
+      title: "INSIGHTS & OUTCOMES",
       items: [
         { name: "Analytics", path: "/app/analytics", icon: BarChart3 },
-        { name: "Interaction History", path: "/app/outcomes", icon: BarChart3 },
+        { name: "Interaction History", path: "/app/outcomes", icon: History },
       ],
     },
     {
       title: "ADMINISTRATION",
       items: [
-        { name: "Product Catalogue", path: "/app/products", icon: Package },
-        { name: "Data Import", path: "/app/data-import", icon: UploadCloud },
         { name: "Settings & AI Agents", path: "/app/settings", icon: Settings },
         ...(isSuperAdmin
           ? [{ name: "Governance & Audit", path: "/app/governance", icon: ShieldCheck }]
