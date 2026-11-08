@@ -3,7 +3,7 @@
 <p align="center">
   <img src="docs/assets/tara-logo.png" alt="TARA Logo" height="60" />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="docs/assets/gnani-logo.png" alt="Gnani AI Logo" height="48" />
+  <img src="docs/assets/gnani-logo-white.png" alt="Gnani AI Logo" height="48" />
 </p>
 
 # TARA
@@ -313,7 +313,8 @@ APP/
 │   │   └── index.css              # Tailwind CSS styles & typography
 │   ├── package.json               # Frontend dependencies & scripts
 │   └── vite.config.js             # Vite 5 bundler configuration
-├── docs/assets/gnani-logo.png     # Official Gnani AI asset
+├── docs/assets/gnani-logo-white.png # Official Gnani AI asset (white)
+├── docs/assets/tara-logo.png        # Official TARA brand logo
 ├── README.md                      # Primary project documentation
 ├── ARCHITECTURE.md                # In-depth architectural specification
 ├── DEPLOYMENT_GUIDE.md            # Production deployment walkthrough
