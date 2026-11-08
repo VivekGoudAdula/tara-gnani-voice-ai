@@ -160,3 +160,4 @@ In conversational Voice AI, conversational fluidness requires an overall **Turn 
 - **Text-to-Speech (TTS):** **Gnani Timbre** — Expressive neural voice synthesis supporting regional Indian phonemes.
 - **Conversation LLM:** **Groq API** (`llama-3.3-70b-versatile` / `llama-3.1-8b-instant`) — Ultra-low inference latency.
 - **Telephony Provider:** **Twilio Voice API** with Media Streams bi-directional audio protocol.
+

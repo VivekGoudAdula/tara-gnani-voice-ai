@@ -106,3 +106,4 @@ The platform has been audited and verified for the following critical edge cases
 2. **Calling Window & DND Enforcement:** Every recipient is subjected to a final compliance gate immediately before dispatch. Calls outside the configured calling window (`09:00` - `21:00` in `Asia/Kolkata`) or flagged as DND are automatically deferred or blocked.
 3. **Webhook Idempotency:** Twilio status callbacks are deduplicated using unique event hashes and transition guards, preventing duplicate counter increments or conflicting call states.
 4. **Graceful Fallback on Network Interruption:** If Gnani API or Groq encounters transient network latency, TARA plays a pre-synthesized regional apology phrase ("దయచేసి ఒక్క క్షణం వేచి ఉండండి...") without terminating the call.
+

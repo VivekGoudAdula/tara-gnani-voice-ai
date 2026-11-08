@@ -23,3 +23,4 @@
 1. **Audio Recording:** Use a high-quality USB condenser microphone for the voiceover and record direct audio loopback from the test call to keep Gnani Timbre's voice clear.
 2. **Display Resolution:** Record at 1920x1080 (16:9 ratio) at 60 FPS.
 3. **Cursor Highlights:** Enable subtle cursor click animations to emphasize navigation through the campaign wizard and call drawer.
+
