@@ -62,5 +62,6 @@ playwright-report/
 test-results/
 blob-report/
 
-# Raw video recording
+# Large media files
+*.mp4
 /DEMO.mp4

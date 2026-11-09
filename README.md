@@ -20,7 +20,7 @@
 [![Groq](https://img.shields.io/badge/Groq-Fast%20LLM%20Inference-f59e0b.svg)](https://groq.com)
 [![MongoDB](https://img.shields.io/badge/MongoDB-Atlas%20Async-47A248.svg?logo=mongodb)](https://www.mongodb.com)
 [![Solution Pitch](https://img.shields.io/badge/Pitch%20Deck-TARA%20Solution%20Pitch%20(PDF)-6366f1.svg?logo=adobeacrobatreader&logoColor=white)](./TARA_Solution_Pitch.pdf)
-[![Video Demo](https://img.shields.io/badge/Demo%20Video-Platform%20Walkthrough-e11d48.svg?logo=youtube&logoColor=white)](./docs/assets/DEMO.mp4)
+[![Video Demo](https://img.shields.io/badge/Demo%20Video-Platform%20Walkthrough-e11d48.svg?logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1XU-kmVbeCD4lIdbFPNKq3IdeYI0OLulC/view?usp=sharing)
 
 *Submitted specifically for the **Gnani AI Internship Challenge** by **Vivek Goud Adula***
 
@@ -225,14 +225,14 @@ TARA provides an enterprise SaaS experience engineered for financial institution
 Watch the full end-to-end demonstration showcasing customer lead propensity scoring, campaign configuration, Twilio voice dispatch, real-time bilingual conversation with Gnani speech AI, and automated lead qualification:
 
 <p align="center">
-  <video src="./docs/assets/DEMO.mp4" controls="controls" width="100%" poster="./docs/screenshots/02-dashboard.png">
-    Your browser does not support the video tag. <a href="./docs/assets/DEMO.mp4">Click here to watch the full demo video.</a>
-  </video>
+  <a href="https://drive.google.com/file/d/1XU-kmVbeCD4lIdbFPNKq3IdeYI0OLulC/view?usp=sharing" target="_blank">
+    <img src="./docs/screenshots/02-dashboard.png" alt="Watch TARA Video Demo on Google Drive" width="100%" />
+  </a>
 </p>
 
 <p align="center">
-  <a href="./docs/assets/DEMO.mp4">
-    <strong>▶️ Click to Watch / Download Full Platform Demo Video (MP4)</strong>
+  <a href="https://drive.google.com/file/d/1XU-kmVbeCD4lIdbFPNKq3IdeYI0OLulC/view?usp=sharing" target="_blank">
+    <strong>▶️ Click to Watch Full Platform Demo Video on Google Drive</strong>
   </a>
 </p>
 
@@ -362,7 +362,6 @@ APP/
 ├── docs/assets/gnani-logo-white.png # Official Gnani AI asset (white)
 ├── docs/assets/tara-logo.png        # Official TARA brand logo
 ├── docs/assets/tara-pitch-preview.png # One-page pitch preview image
-├── docs/assets/DEMO.mp4            # Full platform walkthrough & voice AI demo video
 ├── TARA_Solution_Pitch.pdf        # Executive solution & architecture pitch deck
 ├── README.md                      # Primary project documentation
 ├── ARCHITECTURE.md                # In-depth architectural specification

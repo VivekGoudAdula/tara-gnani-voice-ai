@@ -3,6 +3,7 @@
 **Target Duration:** Exactly 60 Seconds  
 **Format:** Screen Recording + Live Audio Call Playback + Voiceover Narration  
 **Platform Showcase:** TARA powered by Gnani AI (Prisma STT & Timbre TTS)  
+**Video Demo Link:** [Watch Full Demo on Google Drive](https://drive.google.com/file/d/1XU-kmVbeCD4lIdbFPNKq3IdeYI0OLulC/view?usp=sharing)  
 
 ---
 
