@@ -30,6 +30,7 @@ APP/
 │   └── DEMO_SCRIPT.md        # 60-second video demo walkthrough
 ├── README.md                 # Primary project overview and quickstart
 ├── TARA_Solution_Pitch.pdf   # Executive solution pitch deck
+├── docs/assets/DEMO.mp4      # Full platform walkthrough & voice AI demo video
 └── .gitignore                # Production git ignore configuration
 ```
 

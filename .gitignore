@@ -61,3 +61,6 @@ yarn-error.log*
 playwright-report/
 test-results/
 blob-report/
+
+# Raw video recording
+/DEMO.mp4
