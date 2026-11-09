@@ -226,7 +226,7 @@ Watch the full end-to-end demonstration showcasing customer lead propensity scor
 
 <p align="center">
   <a href="https://drive.google.com/file/d/1XU-kmVbeCD4lIdbFPNKq3IdeYI0OLulC/view?usp=sharing" target="_blank">
-    <img src="./docs/screenshots/02-dashboard.png" alt="Watch TARA Video Demo on Google Drive" width="100%" />
+    <img src="./docs/screenshots/01-landing.png" alt="Watch TARA Video Demo on Google Drive" width="100%" />
   </a>
 </p>
 
