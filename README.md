@@ -27,6 +27,31 @@
 
 </div>
 
+---
+
+## 📄 PROJECT PITCH — ONE-PAGE OVERVIEW
+
+Get a quick overview of TARA's problem statement, solution,
+Gnani AI integration, architecture and business impact.
+
+<p align="center">
+  <a href="./TARA_Solution_Pitch.pdf">
+    <img
+      src="./docs/assets/tara-pitch-preview.png"
+      alt="TARA One-Page Solution Pitch"
+      width="100%"
+    />
+  </a>
+</p>
+
+<p align="center">
+  <a href="./TARA_Solution_Pitch.pdf">
+    <strong>📥 View Full One-Page Solution Pitch (PDF)</strong>
+  </a>
+</p>
+
+---
+
 ## 1. Introduction
 
 **TARA (Targeted Acquisition & Reach Agent)** is an enterprise multilingual Voice AI customer acquisition and engagement SaaS platform built for Indian financial institutions, retail banks, and NBFCs. 
@@ -316,6 +341,7 @@ APP/
 │   └── vite.config.js             # Vite 5 bundler configuration
 ├── docs/assets/gnani-logo-white.png # Official Gnani AI asset (white)
 ├── docs/assets/tara-logo.png        # Official TARA brand logo
+├── docs/assets/tara-pitch-preview.png # One-page pitch preview image
 ├── TARA_Solution_Pitch.pdf        # Executive solution & architecture pitch deck
 ├── README.md                      # Primary project documentation
 ├── ARCHITECTURE.md                # In-depth architectural specification
