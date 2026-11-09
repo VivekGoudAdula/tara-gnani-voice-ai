@@ -29,6 +29,7 @@ APP/
 │   ├── CHALLENGE_SUBMISSION.md # Gnani AI Internship submission report
 │   └── DEMO_SCRIPT.md        # 60-second video demo walkthrough
 ├── README.md                 # Primary project overview and quickstart
+├── TARA_Solution_Pitch.pdf   # Executive solution pitch deck
 └── .gitignore                # Production git ignore configuration
 ```
 

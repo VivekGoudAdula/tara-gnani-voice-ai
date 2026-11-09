@@ -19,6 +19,7 @@
 [![Gnani Timbre](https://img.shields.io/badge/Gnani%20Timbre-v2.5%20TTS-3b82f6.svg)](https://vachana.ai)
 [![Groq](https://img.shields.io/badge/Groq-Fast%20LLM%20Inference-f59e0b.svg)](https://groq.com)
 [![MongoDB](https://img.shields.io/badge/MongoDB-Atlas%20Async-47A248.svg?logo=mongodb)](https://www.mongodb.com)
+[![Solution Pitch](https://img.shields.io/badge/Pitch%20Deck-TARA%20Solution%20Pitch%20(PDF)-6366f1.svg?logo=adobeacrobatreader&logoColor=white)](./TARA_Solution_Pitch.pdf)
 
 *Submitted specifically for the **Gnani AI Internship Challenge** by **Vivek Goud Adula***
 
@@ -315,6 +316,7 @@ APP/
 │   └── vite.config.js             # Vite 5 bundler configuration
 ├── docs/assets/gnani-logo-white.png # Official Gnani AI asset (white)
 ├── docs/assets/tara-logo.png        # Official TARA brand logo
+├── TARA_Solution_Pitch.pdf        # Executive solution & architecture pitch deck
 ├── README.md                      # Primary project documentation
 ├── ARCHITECTURE.md                # In-depth architectural specification
 ├── DEPLOYMENT_GUIDE.md            # Production deployment walkthrough
